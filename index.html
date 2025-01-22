@@ -22,9 +22,7 @@
   <body>
     <div class="container text-center mt-5">
       <h2>EingeburgTest</h2>
-      <p>
-        The best German citizenship test ... 
-      </p>
+      <p>The best German citizenship test ...</p>
     </div>
 
     <!-- Modal -->
@@ -50,8 +48,8 @@
           </div>
           <div class="modal-body text-center">
             <p>
-              Chat with one of our experts through WhatsApp to understand how we can better prepare
-              you for the German citizenship test.
+              Chat with one of our experts through WhatsApp to understand how we
+              can better prepare you for the German citizenship test.
             </p>
           </div>
           <div class="modal-footer justify-content-center">
@@ -78,10 +76,11 @@
         window.open(whatsappURL, "_blank");
       }
 
-      // Show the modal automatically when the page loads
       document.addEventListener("DOMContentLoaded", () => {
-        const modal = new bootstrap.Modal(document.getElementById("adModal"));
-        modal.show();
+        setTimeout(() => {
+          const modal = new bootstrap.Modal(document.getElementById("adModal"));
+          modal.show();
+        }, 500);
       });
     </script>
   </body>
